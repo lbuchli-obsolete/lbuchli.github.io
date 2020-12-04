@@ -46,7 +46,7 @@ function renderEvent(change) {
         }
     };
 
-    request.open("GET", "events/rendered/" + currentEvent.toString() + ".html", true);
+    request.open("GET", "/elektronikgeschichte/events/rendered/" + currentEvent.toString() + ".html", true);
     request.send();
 }
 
