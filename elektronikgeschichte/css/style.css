@@ -141,4 +141,5 @@ p {
 }
 body {
   color: #434D4E;
+  max-width: 100vw;
 }
