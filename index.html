@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Elektronikgeschichte</title>
+  <meta name="description" content="Elektronikindustrie">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Entwicklung der Elektronikindustrie</h1>
+
+  <p>
+  Diese Seite ist ein Schulprojekt, das die wirtschaftlich relevanten Ereignisse
+  in der Elektronikgeschichte aufzeigen soll. Die Ereignisse sind chronologisch in
+  einem Zeitstrahl angeordnet.
+  </p>
+  
+  <div id="eventview">
+
+    <div class="event" hidden="true" id="prev-event"></div>
+    <div class="event" id="current-event"></div>
+    <div class="event" hidden="true" id="next-event"></div>
+
+    <div class="event" hidden="true" id="template-event">
+
+      <button id="prev-button" class="nav-button" onclick="prevEvent()">
+        <img src="img/arrow.svg" style="transform: rotate(90deg)" width="50" />
+      </button>
+      <button id="next-button" class="nav-button" onclick="nextEvent()">
+        <img src="img/arrow.svg" style="transform: rotate(-90deg)" width="50" />
+      </button>
+      <button id="more-button" class="nav-button" onclick="moreEvent()">
+        <img src="img/arrow.svg" width="50" />
+      </button>
+    </div>
+
+  </div>
+  
+  <script src="js/fetch_event.js"></script>
+
+</body>
+</html>
